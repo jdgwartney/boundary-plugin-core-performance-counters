@@ -21,7 +21,7 @@ var _last; function poll()
                var user = (e.times.user - l.times.user) /
                           (e.total - l.total);
 
-               console.log('CPU_CORE %d %s-%d', user, _source, idx + 1);
+               console.log('INC_TEST_METRIC %d %s-%d', user, _source, idx + 1);
            }
        }
        _last = cpus;
