@@ -1,6 +1,6 @@
 {
 
-  "name" : "inContact Cluster",
+  "name" : "inContactCluster",
   "version": "2.0.0",
   "meterVersionRequired" : "4.2.0-611",
   "unsupportedPlatforms" : [ ],
