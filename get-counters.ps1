@@ -45,12 +45,11 @@ foreach ($counter in $config.counters) {
 while($true)
 {
     $counters = Get-Counter -Counter $counter_names
-    $timestamp = [math]::Round((Get-Date -Date (Get-Date).toUniversalTime() -UFormat %s))
     $samples = $counters.CounterSamples
     foreach ($s in $samples) {
         $value = $s.CookedValue * $multipliers[$s.path]
         $metric_id = $metric_ids[($s.path).toUpper()]
-        Write-Host $metric_id $value $source $timestamp
+        Write-Host $metric_id $value $source
     }
     Start-Sleep -m $delay
 }
