@@ -1,90 +1,27 @@
 {
-  "INC_PROCESSOR_PERCENT_PROCESSOR_TIME": {
+  "PHYSICAL_DISK_PERCENT_DISK_TIME" : {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
-    "description": "Percentage of CPU used",
-    "displayName": "Processor % Time",
-    "displayNameShort": "inC Proc % Time",
+    "displayName": "Disk percent % Time",
+    "displayNameShort": "Disk percent",
     "unit": "percent"
   },
-  "INC_PROCESSING_THREADS_BLOCKING": {
+
+  "MEMORY_COMMITTED_BYTES_IN_USE" : {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
-    "description": "Processing Threads Blocking",
-    "displayName": "Processing Threads Blocking",
-    "displayNameShort": "inC Processing Threads Blocking",
-    "unit": "number"
+    "description": "Memory Committed Bytes In Use",
+    "displayName": "Memory Committed Bytes",
+    "displayNameShort": "Mem. Com. Bytes",
+    "unit": "bytes"
   },
-  "INC_ACTIONS_PER_SECOND": {
+
+  "PROCESSOR_PERCENT_PROCESSOR_TIME" : {
     "defaultAggregate": "AVG",
     "defaultResolutionMS": 1000,
-    "description": "Actions Per Second",
-    "displayName": "Actions Per Second",
-    "displayNameShort": "inC Actions Per Second",
-    "unit": "number"
-  },
-  "INC_BUSINESS_UNITS_THROTTLED": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "Business Units Throttled",
-    "displayNameShort": "inC Business Units Throttled",
-    "unit": "number"
-  },
-  "INC_PROCESSING_THREADS": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "",
-    "displayName": "UNC Processing Threads",
-    "displayNameShort": "inC Processing Threads",
-    "unit": "number"
-  },
- "INC_PROCESSING_THREADS_BUSY": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "Processing Threads Busy",
-    "displayName": "Processing Threads Busy",
-    "displayNameShort": "inC Processing Threads Busy",
-    "unit": "number"
-  },
- "INC_SQL_EXECUTE_TIME_AVERAGE": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "SQL Execute Time",
-    "displayName": "SQL Execute Time",
-    "displayNameShort": "inC SQL Execute Time",
-    "unit": "number"
-  },
- "INC_TOTAL_CALLS": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "Incontact Total Calls",
-    "displayName": "Incontact Total Calls",
-    "displayNameShort": "inC Total Calls",
-    "unit": "number"
-  },
- "INC_TOTAL_SCRIPTS": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "Incontact Total Scripts",
-    "displayName": "Incontact Total Scripts",
-    "displayNameShort": "inC Total Scripts",
-    "unit": "number"
-  },
- "INC_TOTAL_SESSIONS": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "Incontact Total Sessions",
-    "displayName": "Incontact Total Sessions",
-    "displayNameShort": "inC Total Sessions",
-    "unit": "number"
-  },
- "INC_TOTAL_VOICE_PROVIDERS": {
-    "defaultAggregate": "AVG",
-    "defaultResolutionMS": 1000,
-    "description": "Total Voice Providers",
-    "displayName": "Total Voice Providers",
-    "displayNameShort": "inC Total Voice Providers",
-    "unit": "number"
+    "description": "Processor Percent Processor Time",
+    "displayName": "Processor Percent",
+    "displayNameShort": "Proc. Per",
+    "unit": "pecent"
   }
 }
