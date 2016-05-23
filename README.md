@@ -8,17 +8,12 @@ Template plugin for extracting metrics from the Windows Performance Counter
 |:----------|:-----:|:-------:|:-------:|:----:|
 | Supported |       |    v    |         |      |
 
-This plugin is compatible with Redis 2.6.X or later.
-
-#### For Boundary Meter v4.2 or later
-
-- To install new meter go to Settings->Installation or [see instructions](https://help.boundary.com/hc/en-us/sections/200634331-Installation).
-- To upgrade the meter to the latest version - [see instructions](https://help.boundary.com/hc/en-us/articles/201573102-Upgrading-the-Boundary-Meter).
-
 ### Plugin Setup
 
-This plugin is useable about of the box with an example `counters.json` which contain example counters to collect from. In most instances you may want to customize the metrics that need to be collected. The easiest method is clone this GitHub repository and modify the `counters.json` with the counters you wish to collect.
+This plugin is useable about of the box with an example `counters.json` which contains example counters to collect from the Windows performance counters.
 
+In most instances you may want to customize the metrics that need to be collected by
+by the plugin. See section _Modifying Performance Counters Collected_ below which provides an example of customizing the performance counters collected using this plugin as a template.
 
 #### Performance Counter Configuration File
 
@@ -56,7 +51,7 @@ The description of each of the files is described below.
 
 #### Metrics Configuration File
 
-This configuration file indicates the metric definitions used by this plugin. Description of each of fields can be founder [here](http://premium-documentation.boundary.com/v1/post/metrics)
+This configuration file indicates the metric definitions used by this plugin. Description of each of fields can be found [here](http://documentation.truesight.bmc.com/v1/post/metrics)
 
 ```json
 {
@@ -89,20 +84,43 @@ This configuration file indicates the metric definitions used by this plugin. De
 
 ### Plugin Configuration Fields
 
-|Field Name  |Description                                            |
-|:-----------|:------------------------------------------------------|
-|Source      |The source to display in the legend for the REDIS data.|
+|Field Name  |Description                                                          |
+|:-----------|:--------------------------------------------------------------------|
+|Source      |The source to display in the legend for the performance counter data.|
 
 ### Metrics Collected
 
-|Metric Name               |Description|
-|:-------------------------|:---------------------------------------------------------------|
-|Processor % Time          |Percentage of CPU used                                          |
-|Memory Committed Bytes    |Memory committed bytes in use                                   |
-|Physical Disk % Time      |Physical Disk Percent Disk Time                                 |
+|Metric Name           |Description|
+|:---------------------|:------------------------------|
+|Processor % Time      |Percentage of CPU used         |
+|Memory Committed Bytes|Memory committed bytes in use  |
+|Physical Disk % Time  |Physical Disk Percent Disk Time|
 
 ### Dashboards
 
 - Windows Performance Counter
 
+### Modifying Performance Counters Collected
 
+The following section provides an example of modifying the plugin to support different performance counters.
+
+The steps need to customize the plugin are as follows:
+
+1. Forking this GitHub repository.
+2. Configuring desired performance counters to collect.
+3. Create the metrics definitions associated with the performance counters.
+4. Add the new metrics associated with the performance counters to the plugin manifest.
+5. Create new dashboard definitions incorporating the new performance counters to be collected.
+
+#### Forking this GitHub Repository
+
+
+#### Configuring desired performance counters to collect.
+
+#### Create the metrics definitions associated with the performance counters.
+
+#### Add the new metrics associated with the performance counters to the plugin manifest.
+
+#### Create new dashboard definitions incorporating the new performance counters to be collected.
+
+#### Modify `plugin.json`

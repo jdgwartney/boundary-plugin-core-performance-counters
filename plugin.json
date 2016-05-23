@@ -1,29 +1,21 @@
 {
 
-  "name" : "inContactCluster",
-  "version": "2.0.0",
+  "name" : "TrueSight Pulse Meter Plugin for Windows Performance Counters",
+  "version": "1.0.0",
   "meterVersionRequired" : "4.2.0-611",
   "unsupportedPlatforms" : [ ],
   "tags": "Windows",
-  "description": "Extracts InContact metrics from Windows Performance Counters",
+  "description": "Extracts metrics from Windows Performance Counters",
   "icon": "icon.png",
   "command": "powershell -NoLogo -NonInteractive -Command Set-ExecutionPolicy RemoteSigned; .\\get-counters.ps1",
   "metrics": [
-    "INC_PROCESSOR_PERCENT_PROCESSOR_TIME",
-    "INC_PROCESSING_THREADS_BLOCKING",
-    "INC_ACTIONS_PER_SECOND",
-    "INC_BUSINESS_UNITS_THROTTLED",
-    "INC_PROCESSING_THREADS",
-    "INC_PROCESSING_THREADS_BUSY",
-    "INC_SQL_EXECUTE_TIME_AVERAGE",
-    "INC_TOTAL_CALLS",
-    "INC_TOTAL_SCRIPTS",
-    "INC_TOTAL_SESSIONS",
-    "INC_TOTAL_VOICE_PROVIDERS"
+    "PROCESSOR_PERCENT_PROCESSOR_TIME",
+    "MEMORY_COMMITTED_BYTES_IN_USE",
+    "PHYSICAL_DISK_PERCENT_DISK_TIME"
   ],
   "dashboards": [
     {
-      "name": "inContact Performance Counters",
+      "name": "Windows Performance Counters",
       "layout": "d-w=2&d-h=2&d-pad=5&d-light=1&d-bg=none&d-g-ACTIONS_PER_SECOND=0-0-1-1&d-g-BUSINESS_UNITS_THROTTLED=1-0-1-1&d-g-PROCESSING_THREADS=0-1-1-1&d-g-PROCESSING_THREADS_BLOCKING=1-1-1-1"
     }
   ],
